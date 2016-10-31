@@ -1,0 +1,16 @@
+﻿<mui:ModernWindow x:Class="ModernFileEncrypter.MainWindow"
+                  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                  xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+                  Title="File Encrypter" 
+                  Style="{StaticResource BlankWindow}">
+    <Grid Style="{StaticResource ContentRoot}">
+        <mui:ModernTab SelectedSource="Pages/Home.xaml">
+            <mui:ModernTab.Links>
+                <mui:Link Source="Pages/Home.xaml" DisplayName="Home" />
+                <mui:Link Source="Pages/Encrypt.xaml" DisplayName="Encrypt" />
+                <mui:Link Source="Pages/Decrypt.xaml" DisplayName="Decrypt" />
+            </mui:ModernTab.Links>
+        </mui:ModernTab>
+    </Grid>
+</mui:ModernWindow>
